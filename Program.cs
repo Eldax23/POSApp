@@ -1,0 +1,21 @@
+using POSApp.Screens;
+using POSApp.Screens.Customers;
+using POSApp.Screens.Products;
+
+namespace POSApp
+{
+    internal static class Program
+    {
+        /// <summary>
+        ///  The main entry point for the application.
+        /// </summary>
+        [STAThread]
+        static void Main()
+        {
+            // To customize application configuration such as set high DPI settings or default font,
+            // see https://aka.ms/applicationconfiguration.
+            ApplicationConfiguration.Initialize();
+            Application.Run(new CustomerFrm());
+        }
+    }
+}
