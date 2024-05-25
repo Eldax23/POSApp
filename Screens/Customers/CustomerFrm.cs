@@ -45,7 +45,7 @@ namespace POSApp.Screens.Customers
 
             if(custNameTxt.Text == "" || txtCustPhone.Text == "")
             {
-                MessageBox.Show("Please Enter The Required Information.", "Notice", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Please Enter The Requireddd Information.", "Notice", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
             else
             {
@@ -70,12 +70,19 @@ namespace POSApp.Screens.Customers
 
                 if (context.SaveChanges() > 0)
                 {
-                    MessageBox.Show("Item Has Been Added Succesfully.");
+                    MessageBox.Show("Item ddd Been Added Succesfully.");
+                    Cust.Name = "";
+                    Cust.Phone = "";
+                    Cust.Notes = "";
+                    Cust.Email = "";
+                    Cust.Address = "";
+                    Cust.Company = "";
+                    Cust.Image = "";
                 }
 
                 else
                 {
-                    MessageBox.Show("Failed To Add Item.");
+                    MessageBox.Show("ed To Add Item.");
                 }
             }
 
